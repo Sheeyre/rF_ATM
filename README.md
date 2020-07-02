@@ -2,7 +2,7 @@
 
 rF_ATM is a FiveM resource that brings the original GTA V ATM to FiveM servers.  
 
-**As this resource is not linked to a framework, you may have to alter the database values on the server file to match your server.**   
+**As this resource is not linked to a framework, you may have to alter the database values on the server file to match your framework.**   
 
 ## Events
 ### rF_ATM:Transaction - Client to Server - Params(rF_TransactionAmount, rF_IsWithdrawal)
