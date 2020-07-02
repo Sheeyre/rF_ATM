@@ -17,7 +17,7 @@ rF_ATM is a FiveM resource that brings the original GTA V ATM to FiveM servers.
 1. Fetches bank, cash and transaction values from the database.
 2. Sends the player's client two events (`rF_ATM:SetMoney`, `rF_ATM:SetMoney`) to initialize the client's ATM values (bank, cash, transaction).
 
-### rF_ATM:TransactionSuccess - Server to Client - Params(BankAmount, CashAmount, TransactionJSON)
+### rF_ATM:TransactionSuccess - Server to Client - Params(rF_BankAmount, rF_CashAmount, rF_TransactionJSON)
 **Sent when the server verifies a transaction.**
 1. Sets `rF_PlayerBank` and `rF_PlayerCash` to reflect the values from the server.
 2. Adds the given transaction to the transactions table, `rF_Transactions`.
