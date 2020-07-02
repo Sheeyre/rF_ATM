@@ -122,6 +122,10 @@ Citizen.CreateThread(function()
 	--Draw ATM scaleform
 	while true do
 		if(Scaleform~=nil) then
+			if(IsPedDeadOrDying(PlayerPedId(), true) or not NearATM) then
+				Scaleform=nil
+			end
+			
 			DisableAllControlActions(0)
 			StopCinematicShot(true)
 
