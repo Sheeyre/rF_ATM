@@ -59,7 +59,6 @@ AddEventHandler('rF_ATM:StartATM', function()
 			BankAmount = result[1]['bank']
 			CashAmount = result[1]['cash']
 
-			print("Sending $"..BankAmount.." - $"..CashAmount)
 			TriggerClientEvent('rF_ATM:SetMoney', source, BankAmount, CashAmount)
 		end)
 
@@ -69,8 +68,7 @@ AddEventHandler('rF_ATM:StartATM', function()
 				Transactions[k] = v
 			end
 
-			print("Sending $"..json.encode(Transactions))
-			TriggerClientEvent('rF_ATM:SetTransactions', source, json.encode(Transactions))
+			TriggerClientEvent('rF_ATM:SetMoney', source, json.encode(Transactions))
 		end)
 	end)
 end)

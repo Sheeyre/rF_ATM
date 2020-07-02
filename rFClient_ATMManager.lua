@@ -31,12 +31,12 @@ AddEventHandler('onClientResourceStart', function(resourceName)
 end)
 
 RegisterNetEvent('rF_ATM:TransactionSuccess')
-AddEventHandler('rF_ATM:TransactionSuccess', function(BankAmount, CashAmount, TransactionJSON)
-	rF_PlayerBank = BankAmount
-	rF_PlayerCash = CashAmount
+AddEventHandler('rF_ATM:TransactionSuccess', function(rF_BankAmount, rF_CashAmount, rF_TransactionJSON)
+	rF_PlayerBank = rF_BankAmount
+	rF_PlayerCash = rF_CashAmount
 
-	if(TransactionJSON) then
-		local DecodedTransaction = json.decode(TransactionJSON)
+	if(rF_TransactionJSON) then
+		local DecodedTransaction = json.decode(rF_TransactionJSON)
 		table.insert(rF_Transactions, DecodedTransaction)
 	end
 
@@ -46,15 +46,15 @@ AddEventHandler('rF_ATM:TransactionSuccess', function(BankAmount, CashAmount, Tr
 end)
 
 RegisterNetEvent('rF_ATM:SetTransactions')
-AddEventHandler('rF_ATM:SetTransactions', function(TransactionsJSON)
-	local DecodedTransactions = json.decode(TransactionsJSON)
+AddEventHandler('rF_ATM:SetTransactions', function(rF_TransactionsJSON)
+	local DecodedTransactions = json.decode(rF_TransactionsJSON)
 	rF_Transactions = DecodedTransactions
 end)
 
 RegisterNetEvent('rF_ATM:SetMoney')
-AddEventHandler('rF_ATM:SetMoney', function(BankAmount, CashAmount)
-	rF_PlayerBank = BankAmount
-	rF_PlayerCash = CashAmount
+AddEventHandler('rF_ATM:SetMoney', function(rF_BankAmount, rF_CashAmount)
+	rF_PlayerBank = rF_BankAmount
+	rF_PlayerCash = rF_CashAmount
 end)
 
 Citizen.CreateThread(function() 
