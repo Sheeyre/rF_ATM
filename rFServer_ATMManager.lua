@@ -46,7 +46,6 @@ end)
 
 RegisterNetEvent('rF_ATM:StartATM')
 AddEventHandler('rF_ATM:StartATM', function()
-	print("Starting ATM")
 	local source = source
 	local SteamID = GetPlayerIdentifier(source, 0):sub(7)
 
@@ -55,27 +54,31 @@ AddEventHandler('rF_ATM:StartATM', function()
 		local CashAmount = 0
 		local Transactions = {}
 
-		MySQL.Async.fetchAll('SELECT * FROM users WHERE identifier = @SteamID', { ['@SteamID'] = SteamID }, function(result)
-			BankAmount = result[1]['bank']
-			CashAmount = result[1]['cash']
+		MySQL.Async.fetchAll('SELECT * FROM '..rF_Config['db-user-table']..' WHERE '..rF_Config['db-user-identification-column']..' = @SteamID', {
+			['@SteamID'] = SteamID
+		}, function(result)
+			BankAmount = result[1][''..rF_Config['db-user-bank-column']]
+			CashAmount = result[1][''..rF_Config['db-user-cash-column']]
 
 			TriggerClientEvent('rF_ATM:SetMoney', source, BankAmount, CashAmount)
 		end)
 
 
-		MySQL.Async.fetchAll('SELECT * FROM transactions WHERE player = @SteamID', { ['@SteamID'] = SteamID }, function(result)
+		MySQL.Async.fetchAll('SELECT * FROM '..rF_Config['db-transaction-table']..' WHERE player = @SteamID', {
+			['@SteamID'] = SteamID 
+		}, function(result)
 			for k,v in pairs(result) do
 				Transactions[k] = v
 			end
 
-			TriggerClientEvent('rF_ATM:SetMoney', source, json.encode(Transactions))
+			TriggerClientEvent('rF_ATM:SetTransactions', source, json.encode(Transactions))
 		end)
 	end)
 end)
 
 function CreateTransaction(SteamID, Reason, Amount, Date)
 	MySQL.ready(function()
-		MySQL.Async.execute('INSERT INTO transactions (player, reason, amount, date) VALUES (@SteamID, @Reason, @Amount, @Date)', {
+		MySQL.Async.execute('INSERT INTO '..rF_Config['db-transaction-table']..' (player, reason, amount, date) VALUES (@SteamID, @Reason, @Amount, @Date)', {
 			['SteamID'] = SteamID,
 			['Reason'] = Reason,
 			['Amount'] = Amount,

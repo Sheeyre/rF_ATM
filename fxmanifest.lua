@@ -9,5 +9,6 @@ client_scripts {
 
 server_scripts {
     'rFServer_ATMManager.lua',
+    'rFConfig.lua',
     '@mysql-async/lib/MySQL.lua'
 }
