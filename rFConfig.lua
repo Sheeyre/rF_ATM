@@ -12,9 +12,3 @@ rF_Config['db-user-cash-column'] = 'cash'
 
 --Database table containing ATM transaction information
 rF_Config['db-transaction-table'] = 'transactions'
-
-rF_Config['atm-hashes'] = {
-	[0] = -1126237515,
-	[1] = -1364697528,
-	[2] = 506770882
-}

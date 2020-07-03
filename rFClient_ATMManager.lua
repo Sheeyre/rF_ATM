@@ -19,6 +19,12 @@ local rF_CurrentScreen = 0
 local rF_AwaitingResult = false
 local rF_ReturnScaleform = 0
 
+rF_ATMHashes = {
+	[0] = -1126237515,
+	[1] = -1364697528,
+	[2] = 506770882
+}
+
 AddEventHandler('onClientResourceStart', function(resourceName) 
 	if(GetCurrentResourceName() == resourceName) then
 		TriggerServerEvent('rF_ATM:StartATM')
@@ -58,7 +64,7 @@ Citizen.CreateThread(function()
 		rF_NearATM = false
 		if(not rF_UsingATM) then
 			local PlayerPos = GetEntityCoords(GetPlayerPed(PlayerId()))
-			for _, Hash in pairs(rF_Config['atm-hashes']) do
+			for _, Hash in pairs(rF_ATMHashes) do
 				ClosestATMObject = GetClosestObjectOfType(PlayerPos.x, PlayerPos.y, PlayerPos.z, 1.5, Hash, false, false, false)
 				if(ClosestATMObject ~= 0) then
 					rF_CurrentATM = ClosestATMObject
