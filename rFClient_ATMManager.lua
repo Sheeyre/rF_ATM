@@ -13,11 +13,6 @@ local rF_LastTransactionAmount = 0;
 
 local rF_ButtonParams = {}
 
-local rF_ATMHashes = {}
-rF_ATMHashes[0] = -1126237515
-rF_ATMHashes[1] = -1364697528
-rF_ATMHashes[2] = 506770882
-
 local rF_CurrentATM = 0
 local rF_CurrentScreen = 0
 
@@ -63,7 +58,7 @@ Citizen.CreateThread(function()
 		rF_NearATM = false
 		if(not rF_UsingATM) then
 			local PlayerPos = GetEntityCoords(GetPlayerPed(PlayerId()))
-			for _, Hash in pairs(rF_ATMHashes) do
+			for _, Hash in pairs(rF_Config['atm-hashes']) do
 				ClosestATMObject = GetClosestObjectOfType(PlayerPos.x, PlayerPos.y, PlayerPos.z, 1.5, Hash, false, false, false)
 				if(ClosestATMObject ~= 0) then
 					rF_CurrentATM = ClosestATMObject
