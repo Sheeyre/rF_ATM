@@ -7,7 +7,8 @@ rF_ATM is a FiveM resource that brings the original GTA V ATM to FiveM servers.
 - mysql-async
 ## Usage
 To use this on your server it is likely that you will have to adjust the config, or for alternate database structures, adjust the server file itself. 
-The server file should be self explanatory as the events are explained below. It is also possible to delete my server file and simply handle these events in your own framework. 
+The server file should be self explanatory as the events are explained below. It is also possible to delete my server file and simply handle these events in your own framework.  
+ATM Locations need not be defined by the server owner because the script will recognize ATMs from object hashes that I have provided. ATM hashes may be added or deleted in the config file.
 ### Database Structure
 This resource will attempt to access a database table containing an identifying element for users (like a steamid or discordid) and then access their bank and cash values.
 If these values are not stored in the same row in a table, you will have to edit the SQL queries. Additionally, this resource needs a table that can hold transaction data. I have provided an .sql file in this resource to help define both tables necessary, however the provided user table will not work unless connected to your server's framework.  
