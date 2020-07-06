@@ -3,7 +3,7 @@ local rF_PlayerCash = 0
 local rF_Transactions = {}
 
 local Scaleform = nil
-local rF_ScaleformID = 'ATM'
+local rF_ScaleformID = 'atm'
 
 local rF_UsingATM = false
 local rF_NearATM = false
@@ -179,7 +179,7 @@ end)
 
 function rf_StartATMScaleform()
 	rF_LoadScaleform(rF_ScaleformID)
-	rF_ATMMouseSelection(0)
+	rF_OpenMenuScreen()
 end
 
 function rF_LoadScaleform(ID)
@@ -187,7 +187,6 @@ function rF_LoadScaleform(ID)
 		RequestScaleformMovie(ID)
 		Citizen.Wait(0)
 	end
-
 	Scaleform = RequestScaleformMovie(ID)
 end
 
@@ -210,6 +209,8 @@ function rF_ATMMouseSelection(SelectionID)
 			rF_OpenTransactionScreen()
 		elseif(SelectionID == 4) then
 			rF_CloseMenu()
+		elseif(SelectionID == 5) then
+			rF_OpenTransferScreen()
 		else
 			rF_OpenMenuScreen()
 		end
@@ -236,6 +237,12 @@ function rF_ATMMouseSelection(SelectionID)
 		if(SelectionID == 1) then
 			rF_OpenMenuScreen()
 		end
+	elseif(rF_CurrentScreen == 7) then
+		if(SelectionID == 1) then
+			rF_OpenMenuScreen()
+		elseif(SelectionID == 2) then
+			--go through with transfer
+		end
 	end
 end
 
@@ -248,6 +255,7 @@ function rF_OpenMenuScreen()
 	rF_CallScaleformFunction(Scaleform, 'SET_DATA_SLOT', 0, 'Choose a service.')
 	rF_CallScaleformFunction(Scaleform, 'SET_DATA_SLOT', 1, 'Withdraw')
 	rF_CallScaleformFunction(Scaleform, 'SET_DATA_SLOT', 2, 'Deposit')
+	rF_CallScaleformFunction(Scaleform, 'SET_DATA_SLOT', 5, 'Transfer')
 	rF_CallScaleformFunction(Scaleform, 'SET_DATA_SLOT', 3, 'Transaction Log')
 	rF_CallScaleformFunction(Scaleform, 'SET_DATA_SLOT', 4, 'Exit')
 	rF_CallScaleformFunction(Scaleform, 'DISPLAY_MENU')
@@ -279,6 +287,18 @@ function rF_OpenDepositScreen()
     rF_CallScaleformFunction(Scaleform, 'DISPLAY_CASH_OPTIONS')
 
     rF_LastTransactionWasWithdrawal = false
+end
+
+function rF_OpenTransferScreen()
+	rF_CurrentScreen = 7
+
+	rF_UpdateDisplayBalance()
+
+	rF_CallScaleformFunction(Scaleform, 'SET_DATA_SLOT_EMPTY')
+	rF_CallScaleformFunction(Scaleform, 'SET_DATA_SLOT', 0, 'Select an account and an amount to transfer.');
+	rF_CallScaleformFunction(Scaleform, 'SET_DATA_SLOT', 1, 'Cancel');
+	rF_CallScaleformFunction(Scaleform, 'SET_DATA_SLOT', 2, 'Transfer');
+    rF_CallScaleformFunction(Scaleform, 'DISPLAY_TRANSFER')
 end
 
 function rF_OpenTransactionScreen()
@@ -357,7 +377,6 @@ end
 
 function rF_CloseMenu()
 	rF_UsingATM = false
-	SetScaleformMovieAsNoLongerNeeded(Scaleform)
 	Scaleform = nil
 
 	ClearPedTasks(PlayerPedId())

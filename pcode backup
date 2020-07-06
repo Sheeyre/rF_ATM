@@ -1,0 +1,2791 @@
+ConstantPool "_global" "com" "Object" "rockstargames" "gtav" "levelDesign" "ATM" "gfxExtensions" "_name" "ui" "core" "BaseScreenLayout" "prototype" "INITIALISE" "TIMELINE" "BOUNDING_BOX" "getNextHighestDepth" "attachMovie" "_visible" "CONTENT" "BACKGROUND" "pinAnimMC" "topmostLevel" "viewContainer" "ref" "onEnterFrame" "update" "CURSOR" "createEmptyMovieClip" "_x" "_y" "_xscale" "_yscale" "SHOW_CURSOR" "transactionMC" "cashMC" "menuMC" "messageMC" "transferMC" "GET_CURRENT_SELECTION" "getCurrentSelectionFromCursorPosition" "playingPINanim" "currentSelection" "SET_DATA_SLOT_EMPTY" "dataProviderUI" "Array" "SET_DATA_SLOT" "slice" "SET_INPUT_EVENT" "buttonContainer" "UP" "navigate" "RIGHT" "DOWN" "LEFT" "SET_INPUT_SELECT" "ATM_SOUNDS" "Pin_Button" "game" "GameInterface" "GENERIC_TYPE" "PLAY_SOUND" "call" "SET_ANALOG_STICK_INPUT" "yScroll" "analogSpeedDivisor" "SET_BROWSER_CURSOR_SPEED_MODIFIER" "SET_CURSOR_STATE" "cursorState" "BUSY" "gotoAndPlay" "gotoAndStop" "cursorInterval" "clearInterval" "GET_CURSOR_STATE" "ARROW" "setCursorBusy" "setInterval" "SET_MOUSE_INPUT" "setCursorInvisible" "previousKey" "currentKey" "x" "y" "globalToLocal" "numberOfColumns" "numberOfRows" "c" "_" "_width" "_height" "setState" "DISPLAY_BALANCE" "playerName" "balance" "toString" "balanceString" "updateBalance" "DISPLAY_TRANSACTIONS" "setupView" "container" "removeMovieClip" "containerDepth" "transactionLayer" "length" "item" "lineXPos" "lineSpacing" "lineYPos" "textLine" "" "-" "formatAmount" ".00 DB" ".00 CR" "TFtext" "text" "TFcredit" "TFdebit" "headerTF" "pageHeight" "c1_1" "valueTF" "wrapKey" "DISPLAY_MESSAGE" "autoSize" "center" "htmlText" "c2_1" "DISPLAY_CASH_OPTIONS" "isNaN" "DISPLAY_TRANSFER" "DISPLAY_MENU" "enterPINanim" "pinAnimStarted" "pinTitleTF" "ATM_ENTER_PIN" "SET_TEXT_WITH_TRANSLATION" "onComplete" "pinBeep" "onCompleteScope" "tweenStar" "TweenStarLite" "delayCall" "counterPINanim" "pin" "_alpha" "Math" "random" "floor" "SCROLL_PAGE" "charAt" "substr" "$" "," "nameTF" "left" "balanceTF" "right" "balanceStringTF" "parseInt" "c1_" "_1" "buttonON" "buttonOFF" "textColor" "UPDATE_TEXT" "statementHeader" "header" "log" "balanceLine" "number" "string" ".00" "ASSetPropFlags"
+Push "_global"
+GetVariable
+Push "com"
+GetMember
+Not
+Not
+If loc0763
+Push "_global"
+GetVariable
+Push "com" 0.0 "Object"
+NewObject
+SetMember
+loc0763:Pop
+Push "_global"
+GetVariable
+Push "com"
+GetMember
+Push "rockstargames"
+GetMember
+Not
+Not
+If loc07a1
+Push "_global"
+GetVariable
+Push "com"
+GetMember
+Push "rockstargames" 0.0 "Object"
+NewObject
+SetMember
+loc07a1:Pop
+Push "_global"
+GetVariable
+Push "com"
+GetMember
+Push "rockstargames"
+GetMember
+Push "gtav"
+GetMember
+Not
+Not
+If loc07eb
+Push "_global"
+GetVariable
+Push "com"
+GetMember
+Push "rockstargames"
+GetMember
+Push "gtav" 0.0 "Object"
+NewObject
+SetMember
+loc07eb:Pop
+Push "_global"
+GetVariable
+Push "com"
+GetMember
+Push "rockstargames"
+GetMember
+Push "gtav"
+GetMember
+Push "levelDesign"
+GetMember
+Not
+Not
+If loc0841
+Push "_global"
+GetVariable
+Push "com"
+GetMember
+Push "rockstargames"
+GetMember
+Push "gtav"
+GetMember
+Push "levelDesign" 0.0 "Object"
+NewObject
+SetMember
+loc0841:Pop
+Push "_global"
+GetVariable
+Push "com"
+GetMember
+Push "rockstargames"
+GetMember
+Push "gtav"
+GetMember
+Push "levelDesign"
+GetMember
+Push "ATM"
+GetMember
+Not
+Not
+If loc3f47
+Push "com"
+GetVariable
+Push "rockstargames"
+GetMember
+Push "gtav"
+GetMember
+Push "levelDesign"
+GetMember
+Push "ATM"
+DefineFunction2 "" 0 4 false false true true true false false true true  {
+Push 0 register2 undefined
+CallMethod
+Pop
+Push register3 "gfxExtensions" true
+SetMember
+Push register1 "_name" "ATM"
+SetMember
+}
+StoreRegister 1
+SetMember
+Push "_global"
+GetVariable
+Push "com"
+GetMember
+Push "rockstargames"
+GetMember
+Push "gtav"
+GetMember
+Push "levelDesign"
+GetMember
+Push "ATM"
+GetMember
+Push "com"
+GetVariable
+Push "rockstargames"
+GetMember
+Push "ui"
+GetMember
+Push "core"
+GetMember
+Push "BaseScreenLayout"
+GetMember
+Extends
+Push register1 "prototype"
+GetMember
+StoreRegister 2
+Pop
+Push register2 "INITIALISE"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "mc"  {
+Push register1 "TIMELINE" register2
+SetMember
+Push register1 "BOUNDING_BOX" 0 register1 "TIMELINE"
+GetMember
+Push "getNextHighestDepth"
+CallMethod
+Push "BOUNDING_BOX" "BOUNDING_BOX" 3 register1 "TIMELINE"
+GetMember
+Push "attachMovie"
+CallMethod
+SetMember
+Push register1 "BOUNDING_BOX"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "CONTENT" 0 register1 "TIMELINE"
+GetMember
+Push "getNextHighestDepth"
+CallMethod
+Push "CONTENT" "CONTENT" 3 register1 "TIMELINE"
+GetMember
+Push "attachMovie"
+CallMethod
+SetMember
+Push register1 "BACKGROUND" register1 "CONTENT"
+GetMember
+Push "BACKGROUND"
+GetMember
+SetMember
+Push register1 "CONTENT"
+GetMember
+Push "pinAnimMC"
+GetMember
+Push "topmostLevel" true
+SetMember
+Push register1 "viewContainer" register1 "CONTENT"
+GetMember
+Push "viewContainer"
+GetMember
+SetMember
+Push register1 "CONTENT"
+GetMember
+Push "ref" register1
+SetMember
+Push register1 "CONTENT"
+GetMember
+Push "onEnterFrame"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push 0 register1 "ref"
+GetMember
+Push "update"
+CallMethod
+Pop
+}
+SetMember
+Push register1 "CURSOR" 0 register1 "TIMELINE"
+GetMember
+Push "getNextHighestDepth"
+CallMethod
+Push "CURSOR" 2 register1 "TIMELINE"
+GetMember
+Push "createEmptyMovieClip"
+CallMethod
+SetMember
+Push register1 "CURSOR"
+GetMember
+Push "_x" 640
+SetMember
+Push register1 "CURSOR"
+GetMember
+Push "_y" 360
+SetMember
+Push register1 "CURSOR"
+GetMember
+Push "_xscale" 150
+SetMember
+Push register1 "CURSOR"
+GetMember
+Push "_yscale" 150
+SetMember
+Push false 1 register1 "SHOW_CURSOR"
+CallMethod
+Pop
+Push register1 "transactionMC" register1 "viewContainer"
+GetMember
+Push "transactionMC"
+GetMember
+SetMember
+Push register1 "cashMC" register1 "viewContainer"
+GetMember
+Push "cashMC"
+GetMember
+SetMember
+Push register1 "menuMC" register1 "viewContainer"
+GetMember
+Push "menuMC"
+GetMember
+SetMember
+Push register1 "messageMC" register1 "viewContainer"
+GetMember
+Push "messageMC"
+GetMember
+SetMember
+Push register1 "transferMC" register1 "viewContainer"
+GetMember
+Push "transferMC"
+GetMember
+SetMember
+}
+SetMember
+Push register2 "GET_CURRENT_SELECTION"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "CURSOR"
+GetMember
+Push "_visible"
+GetMember
+Not
+If loc0c19
+Push 0 register1 "getCurrentSelectionFromCursorPosition"
+CallMethod
+Pop
+loc0c19:Push register1 "playingPINanim"
+GetMember
+Push false
+Equals2
+Not
+If loc0c3c
+Push register1 "currentSelection"
+GetMember
+Return
+loc0c3c:Push -1
+Return
+}
+SetMember
+Push register2 "SET_DATA_SLOT_EMPTY"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "dataProviderUI" 0 "Array"
+NewObject
+SetMember
+}
+SetMember
+Push register2 "SET_DATA_SLOT"
+DefineFunction2 "" 1 5 false false true false false true false true false 3 "slotID"  {
+Push register1 "dataProviderUI"
+GetMember
+Push register3 0
+InitArray
+SetMember
+Push 1 1 register2 "slice"
+CallMethod
+StoreRegister 4
+Pop
+Push register1 "dataProviderUI"
+GetMember
+Push register3 register4
+SetMember
+}
+SetMember
+Push register2 "SET_INPUT_EVENT"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "direction"  {
+Push register1 "buttonContainer"
+GetMember
+Push undefined
+Equals2
+If loc0e43
+Push register1 "playingPINanim"
+GetMember
+Push false
+Equals2
+Not
+If loc0e43
+Push register2
+StoreRegister 0
+Push 1
+StrictEquals
+If loc0dd0
+Push register0 8
+StrictEquals
+If loc0dd0
+Push register0 2
+StrictEquals
+If loc0dee
+Push register0 11
+StrictEquals
+If loc0dee
+Push register0 3
+StrictEquals
+If loc0e0c
+Push register0 9
+StrictEquals
+If loc0e0c
+Push register0 4
+StrictEquals
+If loc0e2a
+Push register0 10
+StrictEquals
+If loc0e2a
+Jump loc0e43
+loc0dd0:Push "UP" 1 register1 "navigate"
+CallMethod
+Pop
+Jump loc0e43
+loc0dee:Push "RIGHT" 1 register1 "navigate"
+CallMethod
+Pop
+Jump loc0e43
+loc0e0c:Push "DOWN" 1 register1 "navigate"
+CallMethod
+Pop
+Jump loc0e43
+loc0e2a:Push "LEFT" 1 register1 "navigate"
+CallMethod
+Pop
+}
+loc0e43:SetMember
+Push register2 "SET_INPUT_SELECT"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "playingPINanim"
+GetMember
+Push false
+Equals2
+Not
+If loc0ed0
+Push "ATM_SOUNDS" "Pin_Button" "com"
+GetVariable
+Push "rockstargames"
+GetMember
+Push "ui"
+GetMember
+Push "game"
+GetMember
+Push "GameInterface"
+GetMember
+Push "GENERIC_TYPE"
+GetMember
+Push "PLAY_SOUND" 4 "com"
+GetVariable
+Push "rockstargames"
+GetMember
+Push "ui"
+GetMember
+Push "game"
+GetMember
+Push "GameInterface"
+GetMember
+Push "call"
+CallMethod
+Pop
+}
+loc0ed0:SetMember
+Push register2 "SET_ANALOG_STICK_INPUT"
+DefineFunction2 "" 3 5 false false true false true false false true false 2 "isLeftStick" 3 "mouseX" 4 "mouseY"  {
+Push register2 false
+Equals2
+Not
+If loc0f3e
+Push register1 "yScroll" register4 register1 "analogSpeedDivisor"
+GetMember
+Push 2
+Divide
+Divide
+SetMember
+Jump loc1019
+loc0f3e:Push register4 -0.2
+Less2
+Not
+If loc0f77
+Push 8 1 register1 "SET_INPUT_EVENT"
+CallMethod
+Pop
+Jump loc1019
+loc0f77:Push register4 0.2
+Greater
+Not
+If loc0fb0
+Push 9 1 register1 "SET_INPUT_EVENT"
+CallMethod
+Pop
+Jump loc1019
+loc0fb0:Push register3 -0.2
+Less2
+Not
+If loc0fe9
+Push 10 1 register1 "SET_INPUT_EVENT"
+CallMethod
+Pop
+Jump loc1019
+loc0fe9:Push register3 0
+Greater
+Not
+If loc1019
+Push 11 1 register1 "SET_INPUT_EVENT"
+CallMethod
+Pop
+}
+loc1019:SetMember
+Push register2 "SET_BROWSER_CURSOR_SPEED_MODIFIER"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "newSpeed"  {
+Push register2 0
+Greater
+Not
+If loc105d
+Push register1 "analogSpeedDivisor" register2
+SetMember
+}
+loc105d:SetMember
+Push register2 "SET_CURSOR_STATE"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "cursorState"  {
+Push register2 register1 "cursorState"
+GetMember
+Equals2
+If loc1114
+Push register2 "BUSY"
+Equals2
+Not
+If loc10cb
+Push register2 1 register1 "CURSOR"
+GetMember
+Push "gotoAndPlay"
+CallMethod
+Pop
+Jump loc1104
+loc10cb:Push register2 1 register1 "CURSOR"
+GetMember
+Push "gotoAndStop"
+CallMethod
+Pop
+Push register1 "cursorInterval"
+GetMember
+Push 1 "clearInterval"
+CallFunction
+Pop
+loc1104:Push register1 "cursorState" register2
+SetMember
+}
+loc1114:SetMember
+Push register2 "GET_CURSOR_STATE"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "cursorState"
+GetMember
+Return
+}
+SetMember
+Push register2 "SHOW_CURSOR"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "visible"  {
+Push register2 undefined
+Equals2
+Not
+If loc116f
+Push true
+StoreRegister 2
+Pop
+loc116f:Push register1 "cursorInterval"
+GetMember
+Push 1 "clearInterval"
+CallFunction
+Pop
+Push register2
+Not
+If loc11b2
+Push "ARROW" 1 register1 "SET_CURSOR_STATE"
+CallMethod
+Pop
+Jump loc11dd
+loc11b2:Push register1 "cursorInterval" 500 "setCursorBusy" register1 3 "setInterval"
+CallFunction
+SetMember
+loc11dd:Push register1 "CURSOR"
+GetMember
+Push "_visible" register2
+SetMember
+}
+SetMember
+Push register2 "SET_MOUSE_INPUT"
+DefineFunction2 "" 2 6 false false true false true false false true false 2 "mouseX" 3 "mouseY"  {
+Push 1280
+StoreRegister 4
+Pop
+Push 720
+StoreRegister 5
+Pop
+Push register1 "CURSOR"
+GetMember
+Push "_x" register4 register2
+Multiply
+SetMember
+Push register1 "CURSOR"
+GetMember
+Push "_y" register5 register3
+Multiply
+SetMember
+Push 0 register1 "getCurrentSelectionFromCursorPosition"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "setCursorBusy"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push "BUSY" 1 register1 "SET_CURSOR_STATE"
+CallMethod
+Pop
+Push register1 "cursorInterval"
+GetMember
+Push 1 "clearInterval"
+CallFunction
+Pop
+Push register1 "cursorInterval" 1000 "setCursorInvisible" register1 3 "setInterval"
+CallFunction
+SetMember
+}
+SetMember
+Push register2 "setCursorInvisible"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "cursorInterval"
+GetMember
+Push 1 "clearInterval"
+CallFunction
+Pop
+Push register1 "CURSOR"
+GetMember
+Push "_visible" false
+SetMember
+}
+SetMember
+Push register2 "getCurrentSelectionFromCursorPosition"
+DefineFunction2 "" 0 6 false false true false true false false true false  {
+Push register1 "previousKey" register1 "currentKey"
+GetMember
+SetMember
+Push "x" register1 "CURSOR"
+GetMember
+Push "_x"
+GetMember
+Push "y" register1 "CURSOR"
+GetMember
+Push "_y"
+GetMember
+Push 2
+InitObject
+StoreRegister 2
+Pop
+Push register2 1 register1 "buttonContainer"
+GetMember
+Push "globalToLocal"
+CallMethod
+Pop
+Push 1
+StoreRegister 3
+Pop
+loc13cb:Push register3 register1 "numberOfColumns"
+GetMember
+Greater
+Not
+Not
+If loc1648
+Push 1
+StoreRegister 4
+Pop
+loc13f0:Push register4 register1 "numberOfRows"
+GetMember
+Greater
+Not
+Not
+If loc1630
+Push register1 "buttonContainer"
+GetMember
+Push "c" register3
+Add2
+Push "_"
+Add2
+Push register4
+Add2
+GetMember
+StoreRegister 5
+Pop
+Push register2 "x"
+GetMember
+Push register5 "_x"
+GetMember
+Greater
+PushDuplicate
+Not
+If loc1472
+Pop
+Push register2 "x"
+GetMember
+Push register5 "_x"
+GetMember
+Push register5 "_width"
+GetMember
+Add2
+Less2
+loc1472:Not
+If loc1618
+Push register2 "y"
+GetMember
+Push register5 "_y"
+GetMember
+Greater
+PushDuplicate
+Not
+If loc14ba
+Pop
+Push register2 "y"
+GetMember
+Push register5 "_y"
+GetMember
+Push register5 "_height"
+GetMember
+Add2
+Less2
+loc14ba:Not
+If loc1618
+Push register5 "_visible"
+GetMember
+Not
+If loc1618
+Push register1 "currentSelection" register3 1
+Equals2
+If loc1504
+Push register4 register1 "numberOfRows"
+GetMember
+Add2
+Jump loc1509
+loc1504:Push register4
+loc1509:SetMember
+Push false register1 "currentKey"
+GetMember
+Push 2 register1 "setState"
+CallMethod
+Pop
+Push register1 "currentKey" register1 "buttonContainer"
+GetMember
+Push "c" register3
+Add2
+Push "_"
+Add2
+Push register4
+Add2
+GetMember
+SetMember
+Push true register1 "currentKey"
+GetMember
+Push 2 register1 "setState"
+CallMethod
+Pop
+Push register1 "previousKey"
+GetMember
+Push register1 "currentKey"
+GetMember
+Equals2
+If loc1613
+Push register1 "playingPINanim"
+GetMember
+Push false
+Equals2
+Not
+If loc1613
+Push "ATM_SOUNDS" "Pin_Button" "com"
+GetVariable
+Push "rockstargames"
+GetMember
+Push "ui"
+GetMember
+Push "game"
+GetMember
+Push "GameInterface"
+GetMember
+Push "GENERIC_TYPE"
+GetMember
+Push "PLAY_SOUND" 4 "com"
+GetVariable
+Push "rockstargames"
+GetMember
+Push "ui"
+GetMember
+Push "game"
+GetMember
+Push "GameInterface"
+GetMember
+Push "call"
+CallMethod
+Pop
+loc1613:Push undefined
+Return
+loc1618:Push register4 1
+Add2
+StoreRegister 4
+Pop
+Jump loc13f0
+loc1630:Push register3 1
+Add2
+StoreRegister 3
+Pop
+Jump loc13cb
+}
+loc1648:SetMember
+Push register2 "DISPLAY_BALANCE"
+DefineFunction2 "" 3 5 false false true false true false false true false 2 "_playerName" 3 "_balanceString" 4 "_balance"  {
+Push register2 undefined
+Equals2
+If loc16a4
+Push register1 "playerName" register2
+SetMember
+loc16a4:Push register4 undefined
+Equals2
+If loc16d1
+Push register1 "balance" 0 register4 "toString"
+CallMethod
+SetMember
+loc16d1:Push register3 undefined
+Equals2
+If loc16f0
+Push register1 "balanceString" register3
+SetMember
+loc16f0:Push register1 "playingPINanim"
+GetMember
+Push false
+Equals2
+Not
+If loc171b
+Push 0 register1 "updateBalance"
+CallMethod
+Pop
+}
+loc171b:SetMember
+Push register2 "DISPLAY_TRANSACTIONS"
+DefineFunction2 "" 0 10 false false true false true false false true false  {
+Push "transactionMC" 1 register1 "setupView"
+CallMethod
+Pop
+Push register1 "container"
+GetMember
+Push undefined
+Equals2
+If loc1779
+Push 0 register1 "container"
+GetMember
+Push "removeMovieClip"
+CallMethod
+Pop
+loc1779:Push register1 "container" register1 "containerDepth"
+GetMember
+Push "container" 2 register1 "transactionMC"
+GetMember
+Push "transactionLayer"
+GetMember
+Push "createEmptyMovieClip"
+CallMethod
+SetMember
+Push undefined
+StoreRegister 2
+Pop
+Push undefined
+StoreRegister 3
+Pop
+Push undefined
+StoreRegister 4
+Pop
+Push undefined
+StoreRegister 5
+Pop
+Push undefined
+StoreRegister 6
+Pop
+Push 2
+StoreRegister 7
+Pop
+loc17ed:Push register7 register1 "dataProviderUI"
+GetMember
+Push "length"
+GetMember
+Less2
+Not
+If loc1a57
+Push register1 "dataProviderUI"
+GetMember
+Push register7
+GetMember
+Push undefined
+Equals2
+Not
+PushDuplicate
+Not
+If loc1849
+Pop
+Push register1 "dataProviderUI"
+GetMember
+Push register7
+GetMember
+Push "length"
+GetMember
+Push 0
+Greater
+loc1849:Not
+If loc1a3f
+Push "item" register7
+Add2
+StoreRegister 2
+Pop
+Push "_x" register1 "lineXPos"
+GetMember
+Push "_y" register1 "lineSpacing"
+GetMember
+Push register7 2
+Subtract
+Multiply
+Push register1 "lineYPos"
+GetMember
+Add2
+Push 2
+InitObject
+Push 0 register1 "container"
+GetMember
+Push "getNextHighestDepth"
+CallMethod
+Push register2 "textLine" 4 register1 "container"
+GetMember
+Push "attachMovie"
+CallMethod
+Pop
+Push register1 "dataProviderUI"
+GetMember
+Push register7
+GetMember
+Push 2
+GetMember
+StoreRegister 3
+Pop
+Push register1 "dataProviderUI"
+GetMember
+Push register7
+GetMember
+Push 1
+GetMember
+StoreRegister 8
+Pop
+Push register1 "dataProviderUI"
+GetMember
+Push register7
+GetMember
+Push 0
+GetMember
+Push 0
+Equals2
+Not
+If loc197f
+Push ""
+StoreRegister 4
+Pop
+Push "-" register8 1 register1 "formatAmount"
+CallMethod
+Add2
+Push ".00 DB"
+Add2
+StoreRegister 5
+Pop
+Jump loc19ac
+loc197f:Push register8 1 register1 "formatAmount"
+CallMethod
+Push ".00 CR"
+Add2
+StoreRegister 4
+Pop
+Push ""
+StoreRegister 5
+Pop
+loc19ac:Push register3 undefined
+Equals2
+If loc19dd
+Push register1 "container"
+GetMember
+Push register2
+GetMember
+Push "TFtext"
+GetMember
+Push "text" register3
+SetMember
+loc19dd:Push register4 undefined
+Equals2
+If loc1a0e
+Push register1 "container"
+GetMember
+Push register2
+GetMember
+Push "TFcredit"
+GetMember
+Push "text" register4
+SetMember
+loc1a0e:Push register5 undefined
+Equals2
+If loc1a3f
+Push register1 "container"
+GetMember
+Push register2
+GetMember
+Push "TFdebit"
+GetMember
+Push "text" register5
+SetMember
+loc1a3f:Push register7 1
+Add2
+StoreRegister 7
+Pop
+Jump loc17ed
+loc1a57:Push register1 "dataProviderUI"
+GetMember
+Push 0
+GetMember
+Push undefined
+Equals2
+If loc1aa0
+Push register1 "transactionMC"
+GetMember
+Push "headerTF"
+GetMember
+Push "text" register1 "dataProviderUI"
+GetMember
+Push 0
+GetMember
+SetMember
+loc1aa0:Push register1 "pageHeight" register1 "container"
+GetMember
+Push "_height"
+GetMember
+SetMember
+Push register1 "numberOfRows" 1
+SetMember
+Push register1 "numberOfColumns" 1
+SetMember
+Push false
+StoreRegister 9
+Pop
+Push register1 "buttonContainer" register1 "transactionMC"
+GetMember
+SetMember
+Push register1 "dataProviderUI"
+GetMember
+Push 1
+GetMember
+Push undefined
+Equals2
+If loc1b7c
+Push register1 "buttonContainer"
+GetMember
+Push "c1_1"
+GetMember
+Push "valueTF"
+GetMember
+Push "text" register1 "dataProviderUI"
+GetMember
+Push 1
+GetMember
+SetMember
+Push true
+StoreRegister 9
+Pop
+Push register1 "buttonContainer"
+GetMember
+Push "c1_1"
+GetMember
+Push "_visible" true
+SetMember
+Jump loc1b98
+loc1b7c:Push register1 "buttonContainer"
+GetMember
+Push "c1_1"
+GetMember
+Push "_visible" false
+SetMember
+loc1b98:Push register9 false
+Equals2
+Not
+If loc1bb8
+Push register1 "buttonContainer" undefined
+SetMember
+loc1bb8:Push register1 "currentKey" register1 "transactionMC"
+GetMember
+Push "c1_1"
+GetMember
+SetMember
+Push register1 "wrapKey" register1 "currentKey"
+GetMember
+SetMember
+Push register1 "currentSelection" 1
+SetMember
+Push true register1 "currentKey"
+GetMember
+Push 2 register1 "setState"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "DISPLAY_MESSAGE"
+DefineFunction2 "" 0 3 false false true false true false false true false  {
+Push "messageMC" 1 register1 "setupView"
+CallMethod
+Pop
+Push register1 "dataProviderUI"
+GetMember
+Push 0
+GetMember
+Push undefined
+Equals2
+If loc1cb5
+Push register1 "messageMC"
+GetMember
+Push "headerTF"
+GetMember
+Push "autoSize" "center"
+SetMember
+Push register1 "messageMC"
+GetMember
+Push "headerTF"
+GetMember
+Push "htmlText" register1 "dataProviderUI"
+GetMember
+Push 0
+GetMember
+SetMember
+loc1cb5:Push register1 "numberOfRows" 1
+SetMember
+Push register1 "numberOfColumns" 2
+SetMember
+Push false
+StoreRegister 2
+Pop
+Push register1 "buttonContainer" register1 "messageMC"
+GetMember
+SetMember
+Push register1 "dataProviderUI"
+GetMember
+Push 1
+GetMember
+Push undefined
+Equals2
+Not
+PushDuplicate
+Not
+If loc1d40
+Pop
+Push register1 "dataProviderUI"
+GetMember
+Push 1
+GetMember
+Push "length"
+GetMember
+Push 0
+Greater
+loc1d40:Not
+If loc1dcc
+Push register1 "buttonContainer"
+GetMember
+Push "c1_1"
+GetMember
+Push "valueTF"
+GetMember
+Push "text" register1 "dataProviderUI"
+GetMember
+Push 1
+GetMember
+SetMember
+Push true
+StoreRegister 2
+Pop
+Push false register1 "buttonContainer"
+GetMember
+Push "c1_1"
+GetMember
+Push 2 register1 "setState"
+CallMethod
+Pop
+Push register1 "buttonContainer"
+GetMember
+Push "c1_1"
+GetMember
+Push "_visible" true
+SetMember
+Jump loc1de8
+loc1dcc:Push register1 "buttonContainer"
+GetMember
+Push "c1_1"
+GetMember
+Push "_visible" false
+SetMember
+loc1de8:Push register1 "dataProviderUI"
+GetMember
+Push 2
+GetMember
+Push undefined
+Equals2
+Not
+PushDuplicate
+Not
+If loc1e2d
+Pop
+Push register1 "dataProviderUI"
+GetMember
+Push 2
+GetMember
+Push "length"
+GetMember
+Push 0
+Greater
+loc1e2d:Not
+If loc1eb9
+Push register1 "buttonContainer"
+GetMember
+Push "c2_1"
+GetMember
+Push "valueTF"
+GetMember
+Push "text" register1 "dataProviderUI"
+GetMember
+Push 2
+GetMember
+SetMember
+Push true
+StoreRegister 2
+Pop
+Push false register1 "buttonContainer"
+GetMember
+Push "c2_1"
+GetMember
+Push 2 register1 "setState"
+CallMethod
+Pop
+Push register1 "buttonContainer"
+GetMember
+Push "c2_1"
+GetMember
+Push "_visible" true
+SetMember
+Jump loc1ed5
+loc1eb9:Push register1 "buttonContainer"
+GetMember
+Push "c2_1"
+GetMember
+Push "_visible" false
+SetMember
+loc1ed5:Push register2 false
+Equals2
+Not
+If loc1ef5
+Push register1 "buttonContainer" undefined
+SetMember
+loc1ef5:Push register1 "currentKey" register1 "messageMC"
+GetMember
+Push "c1_1"
+GetMember
+SetMember
+Push register1 "wrapKey" register1 "currentKey"
+GetMember
+SetMember
+Push register1 "currentSelection" 1
+SetMember
+Push true register1 "currentKey"
+GetMember
+Push 2 register1 "setState"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "DISPLAY_CASH_OPTIONS"
+DefineFunction2 "" 0 7 false false true false true false false true false  {
+Push "cashMC" 1 register1 "setupView"
+CallMethod
+Pop
+Push register1 "dataProviderUI"
+GetMember
+Push 0
+GetMember
+Push undefined
+Equals2
+If loc1ff2
+Push register1 "cashMC"
+GetMember
+Push "headerTF"
+GetMember
+Push "autoSize" "center"
+SetMember
+Push register1 "cashMC"
+GetMember
+Push "headerTF"
+GetMember
+Push "htmlText" register1 "dataProviderUI"
+GetMember
+Push 0
+GetMember
+SetMember
+loc1ff2:Push register1 "container" register1 "cashMC"
+GetMember
+SetMember
+Push register1 "numberOfRows" 4
+SetMember
+Push register1 "numberOfColumns" 2
+SetMember
+Push 1
+StoreRegister 2
+Pop
+Push 1
+StoreRegister 3
+Pop
+Push false
+StoreRegister 4
+Pop
+Push register1 "buttonContainer" register1 "container"
+GetMember
+SetMember
+Push 1
+StoreRegister 5
+Pop
+loc2075:Push register5 register1 "numberOfRows"
+GetMember
+Push register1 "numberOfColumns"
+GetMember
+Multiply
+Push 1
+Add2
+Less2
+Not
+If loc226e
+Push "c" register2
+Add2
+Push "_"
+Add2
+Push register3
+Add2
+StoreRegister 6
+Pop
+Push register1 "dataProviderUI"
+GetMember
+Push register5
+GetMember
+Push undefined
+Equals2
+Not
+PushDuplicate
+Not
+If loc20fc
+Pop
+Push register1 "dataProviderUI"
+GetMember
+Push register5
+GetMember
+Push "length"
+GetMember
+Push 0
+Greater
+loc20fc:Not
+If loc21f0
+Push register1 "dataProviderUI"
+GetMember
+Push register5
+GetMember
+Push 1 "isNaN"
+CallFunction
+Not
+If loc215a
+Push register1 "buttonContainer"
+GetMember
+Push register6
+GetMember
+Push "valueTF"
+GetMember
+Push "text" register1 "dataProviderUI"
+GetMember
+Push register5
+GetMember
+SetMember
+Jump loc219b
+loc215a:Push register1 "buttonContainer"
+GetMember
+Push register6
+GetMember
+Push "valueTF"
+GetMember
+Push "text" register1 "dataProviderUI"
+GetMember
+Push register5
+GetMember
+Push 1 register1 "formatAmount"
+CallMethod
+SetMember
+loc219b:Push true
+StoreRegister 4
+Pop
+Push false register1 "buttonContainer"
+GetMember
+Push register6
+GetMember
+Push 2 register1 "setState"
+CallMethod
+Pop
+Push register1 "buttonContainer"
+GetMember
+Push register6
+GetMember
+Push "_visible" true
+SetMember
+Jump loc220c
+loc21f0:Push register1 "buttonContainer"
+GetMember
+Push register6
+GetMember
+Push "_visible" false
+SetMember
+loc220c:Push register3 1
+Add2
+StoreRegister 3
+Pop
+Push register3 register1 "numberOfRows"
+GetMember
+Greater
+Not
+If loc2256
+Push register2 1
+Add2
+StoreRegister 2
+Pop
+Push 1
+StoreRegister 3
+Pop
+loc2256:Push register5 1
+Add2
+StoreRegister 5
+Pop
+Jump loc2075
+loc226e:Push register4 false
+Equals2
+Not
+If loc228e
+Push register1 "buttonContainer" undefined
+SetMember
+loc228e:Push register1 "currentKey" register1 "container"
+GetMember
+Push "c1_1"
+GetMember
+SetMember
+Push register1 "wrapKey" register1 "currentKey"
+GetMember
+SetMember
+Push register1 "currentSelection" 1
+SetMember
+Push true register1 "currentKey"
+GetMember
+Push 2 register1 "setState"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "DISPLAY_TRANSFER"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push "transferMC" 1 register1 "setupView"
+CallMethod
+Pop
+Push register1 "container" register1 "transferMC"
+GetMember
+SetMember
+}
+SetMember
+Push register2 "DISPLAY_MENU"
+DefineFunction2 "" 0 7 false false true false true false false true false  {
+Push "menuMC" 1 register1 "setupView"
+CallMethod
+Pop
+Push register1 "dataProviderUI"
+GetMember
+Push 0
+GetMember
+Push undefined
+Equals2
+If loc23d0
+Push register1 "menuMC"
+GetMember
+Push "headerTF"
+GetMember
+Push "autoSize" "center"
+SetMember
+Push register1 "menuMC"
+GetMember
+Push "headerTF"
+GetMember
+Push "htmlText" register1 "dataProviderUI"
+GetMember
+Push 0
+GetMember
+SetMember
+loc23d0:Push register1 "container" register1 "menuMC"
+GetMember
+SetMember
+Push register1 "numberOfRows" 5
+SetMember
+Push register1 "numberOfColumns" 1
+SetMember
+Push false
+StoreRegister 2
+Pop
+Push register1 "buttonContainer" register1 "container"
+GetMember
+SetMember
+Push 1
+StoreRegister 3
+Pop
+Push 1
+StoreRegister 4
+Pop
+Push 1
+StoreRegister 5
+Pop
+loc2453:Push register5 register1 "numberOfRows"
+GetMember
+Push register1 "numberOfColumns"
+GetMember
+Multiply
+Push 1
+Add2
+Less2
+Not
+If loc25e1
+Push "c" register3
+Add2
+Push "_"
+Add2
+Push register4
+Add2
+StoreRegister 6
+Pop
+Push register1 "dataProviderUI"
+GetMember
+Push register5
+GetMember
+Push undefined
+Equals2
+Not
+PushDuplicate
+Not
+If loc24da
+Pop
+Push register1 "dataProviderUI"
+GetMember
+Push register5
+GetMember
+Push "length"
+GetMember
+Push 0
+Greater
+loc24da:Not
+If loc2563
+Push register1 "buttonContainer"
+GetMember
+Push register6
+GetMember
+Push "valueTF"
+GetMember
+Push "text" register1 "dataProviderUI"
+GetMember
+Push register5
+GetMember
+SetMember
+Push register1 "buttonContainer"
+GetMember
+Push register6
+GetMember
+Push "_visible" true
+SetMember
+Push false register1 "buttonContainer"
+GetMember
+Push register6
+GetMember
+Push 2 register1 "setState"
+CallMethod
+Pop
+Push true
+StoreRegister 2
+Pop
+Jump loc257f
+loc2563:Push register1 "buttonContainer"
+GetMember
+Push register6
+GetMember
+Push "_visible" false
+SetMember
+loc257f:Push register3 1
+Add2
+StoreRegister 3
+Pop
+Push register3 register1 "numberOfColumns"
+GetMember
+Greater
+Not
+If loc25c9
+Push register4 1
+Add2
+StoreRegister 4
+Pop
+Push 1
+StoreRegister 3
+Pop
+loc25c9:Push register5 1
+Add2
+StoreRegister 5
+Pop
+Jump loc2453
+loc25e1:Push register2 false
+Equals2
+Not
+If loc2601
+Push register1 "buttonContainer" undefined
+SetMember
+loc2601:Push register1 "currentKey" register1 "container"
+GetMember
+Push "c1_1"
+GetMember
+SetMember
+Push register1 "wrapKey" register1 "currentKey"
+GetMember
+SetMember
+Push register1 "currentSelection" 1
+SetMember
+Push true register1 "currentKey"
+GetMember
+Push 2 register1 "setState"
+CallMethod
+Pop
+}
+SetMember
+Push register2 "setupView"
+DefineFunction2 "" 1 3 false false true false true false false true false 2 "viewMC"  {
+Push 0 register1 "enterPINanim"
+CallMethod
+Pop
+Push register1 "viewContainer"
+GetMember
+Push register2
+GetMember
+Push undefined
+Equals2
+Not
+If loc29d7
+Push 0 register1 "viewContainer"
+GetMember
+Push "cashMC"
+GetMember
+Push "removeMovieClip"
+CallMethod
+Pop
+Push 0 register1 "viewContainer"
+GetMember
+Push "menuMC"
+GetMember
+Push "removeMovieClip"
+CallMethod
+Pop
+Push 0 register1 "viewContainer"
+GetMember
+Push "messageMC"
+GetMember
+Push "removeMovieClip"
+CallMethod
+Pop
+Push 0 register1 "viewContainer"
+GetMember
+Push "transactionMC"
+GetMember
+Push "removeMovieClip"
+CallMethod
+Pop
+Push 0 register1 "viewContainer"
+GetMember
+Push "transferMC"
+GetMember
+Push "removeMovieClip"
+CallMethod
+Pop
+Push register2
+StoreRegister 0
+Push "cashMC"
+StrictEquals
+If loc27b1
+Push register0 "menuMC"
+StrictEquals
+If loc2820
+Push register0 "messageMC"
+StrictEquals
+If loc288f
+Push register0 "transactionMC"
+StrictEquals
+If loc28fe
+Push register0 "transferMC"
+StrictEquals
+If loc296d
+Jump loc29d7
+loc27b1:Push register1 "cashMC" "_x" 0 "_y" 160 2
+InitObject
+Push 0 register1 "viewContainer"
+GetMember
+Push "getNextHighestDepth"
+CallMethod
+Push "cashMC" "cashMC" 4 register1 "viewContainer"
+GetMember
+Push "attachMovie"
+CallMethod
+SetMember
+Jump loc29d7
+loc2820:Push register1 "menuMC" "_x" 0 "_y" 160 2
+InitObject
+Push 0 register1 "viewContainer"
+GetMember
+Push "getNextHighestDepth"
+CallMethod
+Push "menuMC" "menuMC" 4 register1 "viewContainer"
+GetMember
+Push "attachMovie"
+CallMethod
+SetMember
+Jump loc29d7
+loc288f:Push register1 "messageMC" "_x" 0 "_y" 160 2
+InitObject
+Push 0 register1 "viewContainer"
+GetMember
+Push "getNextHighestDepth"
+CallMethod
+Push "messageMC" "messageMC" 4 register1 "viewContainer"
+GetMember
+Push "attachMovie"
+CallMethod
+SetMember
+Jump loc29d7
+loc28fe:Push register1 "transactionMC" "_x" 0 "_y" 160 2
+InitObject
+Push 0 register1 "viewContainer"
+GetMember
+Push "getNextHighestDepth"
+CallMethod
+Push "transactionMC" "transactionMC" 4 register1 "viewContainer"
+GetMember
+Push "attachMovie"
+CallMethod
+SetMember
+Jump loc29d7
+loc296d:Push register1 "transferMC" "_x" 0 "_y" 160 2
+InitObject
+Push 0 register1 "viewContainer"
+GetMember
+Push "getNextHighestDepth"
+CallMethod
+Push "transferMC" "transferMC" 4 register1 "viewContainer"
+GetMember
+Push "attachMovie"
+CallMethod
+SetMember
+}
+loc29d7:SetMember
+Push register2 "enterPINanim"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "pinAnimStarted"
+GetMember
+Push false
+Equals2
+Not
+If loc2b0a
+Push register1 "pinAnimStarted" true
+SetMember
+Push register1 "playingPINanim"
+GetMember
+Push true
+Equals2
+Pop
+Push true register1 "CONTENT"
+GetMember
+Push "pinAnimMC"
+GetMember
+Push "pinTitleTF"
+GetMember
+Push "ATM_ENTER_PIN" "com"
+GetVariable
+Push "rockstargames"
+GetMember
+Push "ui"
+GetMember
+Push "game"
+GetMember
+Push "GameInterface"
+GetMember
+Push "GENERIC_TYPE"
+GetMember
+Push "SET_TEXT_WITH_TRANSLATION" 5 "com"
+GetVariable
+Push "rockstargames"
+GetMember
+Push "ui"
+GetMember
+Push "game"
+GetMember
+Push "GameInterface"
+GetMember
+Push "call"
+CallMethod
+Pop
+Push "onComplete" register1 "pinBeep"
+GetMember
+Push "onCompleteScope" register1 2
+InitObject
+Push 0.5 register1 "CONTENT"
+GetMember
+Push "pinAnimMC"
+GetMember
+Push 3 "com"
+GetVariable
+Push "rockstargames"
+GetMember
+Push "ui"
+GetMember
+Push "tweenStar"
+GetMember
+Push "TweenStarLite"
+GetMember
+Push "delayCall"
+CallMethod
+Pop
+}
+loc2b0a:SetMember
+Push register2 "pinBeep"
+DefineFunction2 "" 0 4 false false true false true false false true false  {
+Push register1 "counterPINanim" register1 "counterPINanim"
+GetMember
+Push 1
+Add2
+SetMember
+Push register1 "counterPINanim"
+GetMember
+Push 0
+Greater
+PushDuplicate
+Not
+If loc2b6f
+Pop
+Push register1 "counterPINanim"
+GetMember
+Push 5
+Less2
+loc2b6f:Not
+If loc2c10
+Push register1 "CONTENT"
+GetMember
+Push "pinAnimMC"
+GetMember
+Push "pin" register1 "counterPINanim"
+GetMember
+Add2
+GetMember
+StoreRegister 2
+Pop
+Push register2 "_alpha" 100
+SetMember
+Push "ATM_SOUNDS" "Pin_Button" "com"
+GetVariable
+Push "rockstargames"
+GetMember
+Push "ui"
+GetMember
+Push "game"
+GetMember
+Push "GameInterface"
+GetMember
+Push "GENERIC_TYPE"
+GetMember
+Push "PLAY_SOUND" 4 "com"
+GetVariable
+Push "rockstargames"
+GetMember
+Push "ui"
+GetMember
+Push "game"
+GetMember
+Push "GameInterface"
+GetMember
+Push "call"
+CallMethod
+Pop
+loc2c10:Push register1 "counterPINanim"
+GetMember
+Push 5
+Greater
+Not
+If loc2c6f
+Push register1 "playingPINanim" false
+SetMember
+Push register1 "CONTENT"
+GetMember
+Push "pinAnimMC"
+GetMember
+Push "_visible" false
+SetMember
+Push 0 register1 "updateBalance"
+CallMethod
+Pop
+Jump loc2d4e
+loc2c6f:Push 0 "Math"
+GetVariable
+Push "random"
+CallMethod
+Push 501
+Multiply
+Push 1 "Math"
+GetVariable
+Push "floor"
+CallMethod
+Push 300
+Add2
+StoreRegister 3
+Pop
+Push register1 "counterPINanim"
+GetMember
+Push 5
+Equals2
+Not
+If loc2cd5
+Push 400
+StoreRegister 3
+Pop
+loc2cd5:Push register3 1000
+Divide
+StoreRegister 3
+Pop
+Push "onComplete" register1 "pinBeep"
+GetMember
+Push "onCompleteScope" register1 2
+InitObject
+Push register3 register1 "CONTENT"
+GetMember
+Push "pinAnimMC"
+GetMember
+Push 3 "com"
+GetVariable
+Push "rockstargames"
+GetMember
+Push "ui"
+GetMember
+Push "tweenStar"
+GetMember
+Push "TweenStarLite"
+GetMember
+Push "delayCall"
+CallMethod
+Pop
+}
+loc2d4e:SetMember
+Push register2 "update"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "playingPINanim"
+GetMember
+Push false
+Equals2
+PushDuplicate
+Not
+If loc2d94
+Pop
+Push register1 "transactionMC"
+GetMember
+Push "_visible"
+GetMember
+Push true
+Equals2
+loc2d94:Not
+If loc2dd2
+Push register1 "yScroll"
+GetMember
+Push 0
+Equals2
+If loc2dd2
+Push register1 "yScroll"
+GetMember
+Push 1 register1 "SCROLL_PAGE"
+CallMethod
+Pop
+}
+loc2dd2:SetMember
+Push register2 "formatAmount"
+DefineFunction2 "" 1 6 false false true false true false true false false 1 "value"  {
+Push 0 register1 "toString"
+CallMethod
+StoreRegister 1
+Pop
+Push 0 1 register1 "charAt"
+CallMethod
+Push "-"
+Equals2
+Not
+If loc2e53
+Push 1 1 register1 "substr"
+CallMethod
+StoreRegister 1
+Pop
+Jump loc2e9a
+loc2e53:Push 0 1 register1 "charAt"
+CallMethod
+Push "$"
+Equals2
+Not
+If loc2e9a
+Push 1 1 register1 "substr"
+CallMethod
+StoreRegister 1
+Pop
+loc2e9a:Push "$"
+StoreRegister 2
+Pop
+Push register1 "length"
+GetMember
+StoreRegister 3
+Pop
+Push ","
+StoreRegister 4
+Pop
+Push 0
+StoreRegister 5
+Pop
+loc2ecb:Push register5 register3
+Less2
+Not
+If loc2f61
+Push register3 register5
+Subtract
+Push 3
+Modulo
+Push 0
+Equals2
+PushDuplicate
+Not
+If loc2f10
+Pop
+Push register5 0
+Equals2
+Not
+loc2f10:Not
+If loc2f26
+Push register2 register4
+Add2
+StoreRegister 2
+Pop
+loc2f26:Push register2 register5 1 register1 "charAt"
+CallMethod
+Add2
+StoreRegister 2
+Pop
+Push register5 1
+Add2
+StoreRegister 5
+Pop
+Jump loc2ecb
+loc2f61:Push register2
+Return
+}
+SetMember
+Push register2 "updateBalance"
+DefineFunction2 "" 0 2 false false true false true false false true false  {
+Push register1 "playerName"
+GetMember
+Push undefined
+Equals2
+If loc2fd0
+Push register1 "CONTENT"
+GetMember
+Push "nameTF"
+GetMember
+Push "autoSize" "left"
+SetMember
+Push register1 "CONTENT"
+GetMember
+Push "nameTF"
+GetMember
+Push "text" register1 "playerName"
+GetMember
+SetMember
+loc2fd0:Push register1 "balance"
+GetMember
+Push undefined
+Equals2
+If loc3036
+Push register1 "CONTENT"
+GetMember
+Push "balanceTF"
+GetMember
+Push "autoSize" "right"
+SetMember
+Push register1 "CONTENT"
+GetMember
+Push "balanceTF"
+GetMember
+Push "text" register1 "balance"
+GetMember
+Push 1 register1 "formatAmount"
+CallMethod
+SetMember
+loc3036:Push register1 "balanceString"
+GetMember
+Push undefined
+Equals2
+If loc30cf
+Push register1 "CONTENT"
+GetMember
+Push "balanceStringTF"
+GetMember
+Push "autoSize" true
+SetMember
+Push register1 "CONTENT"
+GetMember
+Push "balanceStringTF"
+GetMember
+Push "text" register1 "balanceString"
+GetMember
+SetMember
+Push register1 "CONTENT"
+GetMember
+Push "balanceStringTF"
+GetMember
+Push "_x" register1 "CONTENT"
+GetMember
+Push "balanceTF"
+GetMember
+Push "_x"
+GetMember
+Push register1 "CONTENT"
+GetMember
+Push "balanceStringTF"
+GetMember
+Push "_width"
+GetMember
+Subtract
+SetMember
+}
+loc30cf:SetMember
+Push register2 "SCROLL_PAGE"
+DefineFunction2 "" 1 5 false false true false true false false true false 2 "amount"  {
+Push register1 "container"
+GetMember
+Push "_y"
+GetMember
+StoreRegister 3
+Pop
+Push register1 "container"
+GetMember
+Push "_y"
+GetMember
+Push register2
+Add2
+StoreRegister 4
+Pop
+Push register4 0
+Greater
+Not
+If loc3140
+Push 0
+StoreRegister 4
+Pop
+loc3140:Push register4 350 register1 "pageHeight"
+GetMember
+Subtract
+Less2
+Not
+If loc3179
+Push 350 register1 "pageHeight"
+GetMember
+Subtract
+StoreRegister 4
+Pop
+loc3179:Push register1 "container"
+GetMember
+Push "_y" register4
+SetMember
+}
+SetMember
+Push register2 "navigate"
+DefineFunction2 "" 1 7 false false true false true false false true false 2 "direction"  {
+Push false register1 "currentKey"
+GetMember
+Push 2 register1 "setState"
+CallMethod
+Pop
+Push register1 "previousKey" register1 "currentKey"
+GetMember
+SetMember
+Push 1 1 2 register1 "currentKey"
+GetMember
+Push "_name"
+GetMember
+Push "substr"
+CallMethod
+Push 1 "parseInt"
+CallFunction
+StoreRegister 3
+Pop
+Push 1 3 2 register1 "currentKey"
+GetMember
+Push "_name"
+GetMember
+Push "substr"
+CallMethod
+Push 1 "parseInt"
+CallFunction
+StoreRegister 4
+Pop
+Push register3
+StoreRegister 5
+Pop
+Push register4
+StoreRegister 6
+Pop
+Push register2
+StoreRegister 0
+Push "LEFT"
+StrictEquals
+If loc32cb
+Push register0 "RIGHT"
+StrictEquals
+If loc334c
+Push register0 "UP"
+StrictEquals
+If loc33bb
+Push register0 "DOWN"
+StrictEquals
+If loc343c
+Jump loc34b1
+loc32cb:Push register1 "currentKey" register1 "buttonContainer"
+GetMember
+Push "c" register3 1
+Subtract
+Add2
+Push "_"
+Add2
+Push register4
+Add2
+GetMember
+SetMember
+Push register1 "currentKey"
+GetMember
+Not
+If loc3347
+Push register1 "currentKey" register1 "buttonContainer"
+GetMember
+Push "c" register1 "numberOfColumns"
+GetMember
+Add2
+Push "_"
+Add2
+Push register4
+Add2
+GetMember
+SetMember
+loc3347:Jump loc34b1
+loc334c:Push register1 "currentKey" register1 "buttonContainer"
+GetMember
+Push "c" register3 1
+Add2
+Add2
+Push "_"
+Add2
+Push register4
+Add2
+GetMember
+SetMember
+Push register1 "currentKey"
+GetMember
+Not
+If loc33b6
+Push register1 "currentKey" register1 "buttonContainer"
+GetMember
+Push "c1_" register4
+Add2
+GetMember
+SetMember
+loc33b6:Jump loc34b1
+loc33bb:Push register1 "currentKey" register1 "buttonContainer"
+GetMember
+Push "c" register3
+Add2
+Push "_"
+Add2
+Push register4 1
+Subtract
+Add2
+GetMember
+SetMember
+Push register1 "currentKey"
+GetMember
+Not
+If loc3437
+Push register1 "currentKey" register1 "buttonContainer"
+GetMember
+Push "c" register3
+Add2
+Push "_"
+Add2
+Push register1 "numberOfRows"
+GetMember
+Add2
+GetMember
+SetMember
+loc3437:Jump loc34b1
+loc343c:Push register1 "currentKey" register1 "buttonContainer"
+GetMember
+Push "c" register3
+Add2
+Push "_"
+Add2
+Push register4 1
+Add2
+Add2
+GetMember
+SetMember
+Push register1 "currentKey"
+GetMember
+Not
+If loc34b1
+Push register1 "currentKey" register1 "buttonContainer"
+GetMember
+Push "c" register3
+Add2
+Push "_1"
+Add2
+GetMember
+SetMember
+Jump loc34b1
+loc34b1:Push register1 "currentKey"
+GetMember
+Push "_visible"
+GetMember
+Push false
+Equals2
+Not
+If loc34ec
+Push register2 1 register1 "navigate"
+CallMethod
+Pop
+Jump loc3671
+loc34ec:Push 1 1 2 register1 "currentKey"
+GetMember
+Push "_name"
+GetMember
+Push "substr"
+CallMethod
+Push 1 "parseInt"
+CallFunction
+StoreRegister 3
+Pop
+Push 1 3 2 register1 "currentKey"
+GetMember
+Push "_name"
+GetMember
+Push "substr"
+CallMethod
+Push 1 "parseInt"
+CallFunction
+StoreRegister 4
+Pop
+Push register3 1
+Equals2
+Not
+If loc3599
+Push register1 "currentSelection" register4
+SetMember
+Jump loc35b5
+loc3599:Push register1 "currentSelection" register4 register1 "numberOfRows"
+GetMember
+Add2
+SetMember
+loc35b5:Push true register1 "currentKey"
+GetMember
+Push 2 register1 "setState"
+CallMethod
+Pop
+Push register1 "previousKey"
+GetMember
+Push register1 "currentKey"
+GetMember
+Equals2
+If loc3671
+Push register1 "wrapKey"
+GetMember
+Push register1 "currentKey"
+GetMember
+Equals2
+If loc3671
+Push "ATM_SOUNDS" "Pin_Button" "com"
+GetVariable
+Push "rockstargames"
+GetMember
+Push "ui"
+GetMember
+Push "game"
+GetMember
+Push "GameInterface"
+GetMember
+Push "GENERIC_TYPE"
+GetMember
+Push "PLAY_SOUND" 4 "com"
+GetVariable
+Push "rockstargames"
+GetMember
+Push "ui"
+GetMember
+Push "game"
+GetMember
+Push "GameInterface"
+GetMember
+Push "call"
+CallMethod
+Pop
+loc3671:Push register1 "wrapKey" register1 "currentKey"
+GetMember
+SetMember
+}
+SetMember
+Push register2 "setState"
+DefineFunction2 "" 2 3 false false true false true false true false false 1 "item" 2 "isActive"  {
+Push register1 undefined
+Equals2
+If loc3756
+Push register2
+Not
+If loc3711
+Push register1 "buttonON"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "buttonOFF"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "valueTF"
+GetMember
+Push "textColor" 16777215
+SetMember
+Jump loc3756
+loc3711:Push register1 "buttonON"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "buttonOFF"
+GetMember
+Push "_visible" true
+SetMember
+Push register1 "valueTF"
+GetMember
+Push "textColor" 15790320
+SetMember
+}
+loc3756:SetMember
+Push register2 "UPDATE_TEXT"
+DefineFunction2 "" 0 14 false false true false true false false true false  {
+Push "transactionMC" 1 register1 "setupView"
+CallMethod
+Pop
+Push register1 "transactionMC"
+GetMember
+Push "statementHeader"
+GetMember
+Push undefined
+Equals2
+Not
+If loc3805
+Push "_x" 237 "_y" 25 2
+InitObject
+Push 0 register1 "transactionMC"
+GetMember
+Push "getNextHighestDepth"
+CallMethod
+Push "statementHeader" "statementHeader" 4 register1 "transactionMC"
+GetMember
+Push "attachMovie"
+CallMethod
+StoreRegister 2
+Pop
+loc3805:Push register1 "transactionMC"
+GetMember
+Push "c1_1"
+GetMember
+Push "_visible" false
+SetMember
+Push register1 "dataProviderUI"
+GetMember
+Push 1
+GetMember
+Push 0
+GetMember
+Push undefined
+Equals2
+If loc3882
+Push register1 "transactionMC"
+GetMember
+Push "statementHeader"
+GetMember
+Push "header"
+GetMember
+Push "text" register1 "dataProviderUI"
+GetMember
+Push 1
+GetMember
+Push 0
+GetMember
+SetMember
+loc3882:Push register1 "dataProviderUI"
+GetMember
+Push 2
+GetMember
+Push 0
+GetMember
+Push undefined
+Equals2
+If loc38e3
+Push register1 "transactionMC"
+GetMember
+Push "statementHeader"
+GetMember
+Push "log"
+GetMember
+Push "text" register1 "dataProviderUI"
+GetMember
+Push 2
+GetMember
+Push 0
+GetMember
+SetMember
+loc38e3:Push register1 "dataProviderUI"
+GetMember
+Push 3
+GetMember
+Push 0
+GetMember
+Push undefined
+Equals2
+If loc392c
+Push register1 "dataProviderUI"
+GetMember
+Push 3
+GetMember
+Push 0
+GetMember
+StoreRegister 3
+Pop
+loc392c:Push register1 "dataProviderUI"
+GetMember
+Push 3
+GetMember
+Push 1
+GetMember
+Push undefined
+Equals2
+If loc3975
+Push register1 "dataProviderUI"
+GetMember
+Push 3
+GetMember
+Push 1
+GetMember
+StoreRegister 4
+Pop
+loc3975:Push register1 "container"
+GetMember
+Push undefined
+Equals2
+If loc39a4
+Push 0 register1 "container"
+GetMember
+Push "removeMovieClip"
+CallMethod
+Pop
+loc39a4:Push register1 "container" register1 "containerDepth"
+GetMember
+Push "container" 2 register1 "transactionMC"
+GetMember
+Push "transactionLayer"
+GetMember
+Push "createEmptyMovieClip"
+CallMethod
+SetMember
+Push undefined
+StoreRegister 5
+Pop
+Push undefined
+StoreRegister 6
+Pop
+Push undefined
+StoreRegister 7
+Pop
+Push undefined
+StoreRegister 8
+Pop
+Push undefined
+StoreRegister 9
+Pop
+Push 0
+StoreRegister 10
+Pop
+loc3a18:Push register10 register1 "dataProviderUI"
+GetMember
+Push "length"
+GetMember
+Push 4
+Subtract
+Less2
+Not
+If loc3c7c
+Push register1 "dataProviderUI"
+GetMember
+Push register10 4
+Add2
+GetMember
+Push undefined
+Equals2
+If loc3c64
+Push "item" register10
+Add2
+StoreRegister 5
+Pop
+Push "_x" register1 "lineXPos"
+GetMember
+Push "_y" register1 "lineSpacing"
+GetMember
+Push register10
+Multiply
+Push register1 "lineYPos"
+GetMember
+Add2
+Push 2
+InitObject
+Push 0 register1 "container"
+GetMember
+Push "getNextHighestDepth"
+CallMethod
+Push register5 "textLine" 4 register1 "container"
+GetMember
+Push "attachMovie"
+CallMethod
+Pop
+Push register1 "dataProviderUI"
+GetMember
+Push register10 4
+Add2
+GetMember
+Push 2
+GetMember
+StoreRegister 6
+Pop
+Push register1 "dataProviderUI"
+GetMember
+Push register10 4
+Add2
+GetMember
+Push 1
+GetMember
+StoreRegister 11
+Pop
+Push register1 "dataProviderUI"
+GetMember
+Push register10 4
+Add2
+GetMember
+Push 0
+GetMember
+Push 0
+Equals2
+Not
+If loc3ba4
+Push ""
+StoreRegister 7
+Pop
+Push "-" register11 1 register1 "formatAmount"
+CallMethod
+Add2
+Push ".00 DB"
+Add2
+StoreRegister 8
+Pop
+Jump loc3bd1
+loc3ba4:Push register11 1 register1 "formatAmount"
+CallMethod
+Push ".00 CR"
+Add2
+StoreRegister 7
+Pop
+Push ""
+StoreRegister 8
+Pop
+loc3bd1:Push register6 undefined
+Equals2
+If loc3c02
+Push register1 "container"
+GetMember
+Push register5
+GetMember
+Push "TFtext"
+GetMember
+Push "text" register6
+SetMember
+loc3c02:Push register7 undefined
+Equals2
+If loc3c33
+Push register1 "container"
+GetMember
+Push register5
+GetMember
+Push "TFcredit"
+GetMember
+Push "text" register7
+SetMember
+loc3c33:Push register8 undefined
+Equals2
+If loc3c64
+Push register1 "container"
+GetMember
+Push register5
+GetMember
+Push "TFdebit"
+GetMember
+Push "text" register8
+SetMember
+loc3c64:Push register10 1
+Add2
+StoreRegister 10
+Pop
+Jump loc3a18
+loc3c7c:Push "_x" register1 "lineXPos"
+GetMember
+Push "_y" register1 "container"
+GetMember
+Push "_y"
+GetMember
+Push register1 "container"
+GetMember
+Push "_height"
+GetMember
+Add2
+Push register1 "lineYPos"
+GetMember
+Add2
+Push 36
+Add2
+Push 2
+InitObject
+Push 0 register1 "container"
+GetMember
+Push "getNextHighestDepth"
+CallMethod
+Push "balanceLine" "balanceLine" 4 register1 "container"
+GetMember
+Push "attachMovie"
+CallMethod
+StoreRegister 12
+Pop
+Push register4 undefined
+Equals2
+If loc3d38
+Push register12 "TFtext"
+GetMember
+Push "text" register4
+SetMember
+loc3d38:Push ""
+StoreRegister 13
+Pop
+Push register3 undefined
+Equals2
+If loc3dfe
+Push register3
+TypeOf
+Push "number"
+Equals2
+Not
+If loc3d86
+Push register3 0
+Less2
+Not
+If loc3d81
+Push "-"
+StoreRegister 13
+Pop
+loc3d81:Jump loc3dc9
+loc3d86:Push register3
+TypeOf
+Push "string"
+Equals2
+Not
+If loc3dc9
+Push 0 1 register3 "charAt"
+CallMethod
+Push "-"
+Equals2
+Not
+If loc3dc9
+Push "-"
+StoreRegister 13
+Pop
+loc3dc9:Push register12 "balanceTF"
+GetMember
+Push "text" register13 register3 1 register1 "formatAmount"
+CallMethod
+Add2
+Push ".00"
+Add2
+SetMember
+loc3dfe:Push register1 "pageHeight" register1 "container"
+GetMember
+Push "_height"
+GetMember
+SetMember
+}
+SetMember
+Push register2 "containerDepth" 40
+SetMember
+Push register2 "lineXPos" 237
+SetMember
+Push register2 "lineYPos" 0
+SetMember
+Push register2 "lineSpacing" 35
+SetMember
+Push register2 "analogSpeedDivisor" 15
+SetMember
+Push register2 "yScroll" 0
+SetMember
+Push register2 "pageHeight" 0
+SetMember
+Push register2 "playingPINanim" true
+SetMember
+Push register2 "counterPINanim" 0
+SetMember
+Push register2 "numberOfColumns" 2
+SetMember
+Push register2 "currentSelection" 1
+SetMember
+Push register2 "pinAnimStarted" false
+SetMember
+Push register2 "cursorState" "ARROW"
+SetMember
+Push 1 null "com"
+GetVariable
+Push "rockstargames"
+GetMember
+Push "gtav"
+GetMember
+Push "levelDesign"
+GetMember
+Push "ATM"
+GetMember
+Push "prototype"
+GetMember
+Push 3 "ASSetPropFlags"
+CallFunction
+loc3f47:Pop

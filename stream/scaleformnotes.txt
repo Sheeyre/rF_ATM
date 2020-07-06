@@ -1,0 +1,20 @@
+Open atm.gfx in FFDEC (JPEXS)
+Sprites are pages
+I have  begun creating a new page (transferMC)
+Only added the background so far, but it WORKS!
+Functions are controlled in scripts/__Packages/com/rockstargames/gtav/levelDesign/ATM
+
+is input even possible? i think not
+IT IS! look at dock tease yacht naming
+
+game plan:
+copy shapes
+	edit for atm?
+put into atm
+profit?
+
+things to consider-
+only transfer to online players? yes
+if not, static routing number?
+do we give a list of online players?
+???????????
